@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');;
+
+/* adicionar cores amarelo: #FFBD00, roxo do botao sem transparencia #601e9e fundo da imagem do canva: #11051B*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte-logo: 'Bebas Neue', sans-serif;
+    --fonte-texto-espacada: 'Montserrat', sans-serif;
+    --fonte-texto-junta: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #010101;
+    color: white;
+}
+
+h1 {
+    color: #FFF;
+    font-family: var(--fonte-texto-espacada);
+    font-size: 33.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+p, h2, h3, h4 {
+    color: #CCC;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: var(--fonte-texto-espacada);
+    margin: 0;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+p {
+    font-size: 36px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 144px;
+    padding: 0 2%;
+}
+
+nav .nav-center {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #CCC;
+    font-family: var(--fonte-logo);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+main {
+    height: 610px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 200px;
+    margin-bottom: 120px;
+}
+
+main .main-img {
+    width: 545px;
+} 
+
+main h2 {
+    font-size: 55px;
+}
+
+.destaque-texto {
+    position: relative; /* Necessário para posicionar o pseudoelemento */
+}
+
+.destaque-texto::after {
+    content: "";
+    position: absolute;
+    width: 206%; /* Ajuste o valor para a largura desejada */
+    height: 40px; /* Ajuste o valor para a altura desejada */
+    background-color: #8A2BE2B2;
+    bottom: -15%; /* Ajuste o valor para controlar a extensão para além da borda inferior */
+    left: 103%; /* Começa na metade horizontal */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: -1; /* Coloca o elemento atrás do texto */
+}
+
+form {
+    font-family: var(--fonte-texto-junta);
+    font-size: 20px;
+    font-weight: 300;
+    color: #DDD;
+    margin-top: 25px;
+}
+
+.botao-contato, .enviar-formulario {
+    font-family: var(--fonte-logo);
+    text-align: center;
+    font-size: 20px;
+    width: 196px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: #8A2BE2B2;
+    color: white;
+    border: none;
+}
+
+.input-email, .faq-question {
+    width: 550px;
+    font-size: 20px;
+    margin-top: 13px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ccc;
+}
+
+.input-email {
+  color: #bbb;
+}
+
+.faq-question {
+    color: #ccc;
+    text-align: left;
+}
+
+.enviar-formulario {
+    height: 50px;
+    margin-top: 13px;
+    display: block;
+}
+
+section {
+    margin-top: 50px;
+    padding: 0 200px;
+    display: flex;
+    align-items: center;
+
+}
+.pos-main {
+  padding: 0;
+  margin: -100px 0 0 0;
+}
+
+.pos-pos-main {
+  display:flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.pos-pos-main div {
+  padding: 10px;
+}
+
+.pos-pos-main .vaquinha {
+  text-align: right;
+}
+
+.escola h2, .escola p{
+  color: #fde361;
+}
+
+.vaquinha h2, .vaquinha p {
+  color: #cb6ce6;
+}
+
+.cliente {
+  text-align: center;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+ol {
+  font-family: var(--fonte-texto-junta);
+  font-size: 25px;
+  color: #ccc;
+  list-style-type: none;
+  padding: 0;
+}
+
+.section-1 {
+  display:none;
+}
+
+.section-1-img {
+    width: 583px;
+    height: 871px;
+    margin-right: 35px;
+}
+
+.section-2-img {
+    width: 774px;
+    height: 641px;
+    flex-shrink: 0;
+    margin-left: 35px;
+}
+
+.section-3-img {
+    width: 728px;
+    height: 347px;
+    margin-right: 35px;
+}
+
+section p {
+    margin-top: 13px;
+    font-size: 32px;
+}
+
+.crowdfunding-section {
+    display: none;
+}
+
+.faq-section {
+    display: block;
+}
+
+footer {
+    margin: 100px 0 0 70px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+.faq-answer {
+    display: none;
+
+}
+

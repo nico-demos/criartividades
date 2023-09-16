@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Criartividades - escola de criatividade e financiamento coletivo </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function() {
+          emailjs.init('AlPM0NLusdwP6Xu_x');
+      })();
+  </script>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <h1>CRIARTIVIDADES</h1>
+    </div>
+    <div class="nav-center">
+      <a class="active" href="#home">MISSÃO</a>
+      <a href="#contact">ATIVIDADES</a>
+      <a href="#about">AVALIAÇÕES</a>
+    </div>
+    <div class="nav-right">
+      <button class="botao-contato"> CONTATO </button>
+    </div>
+  </nav>
+  <main>
+    <div class="main-left">
+      <div class="chamada">
+        <h2> A escola de criatividade que te ajuda a <span class="destaque-texto">despertar</span> e dar vida a seus
+          projetos criativos.</h2>
+      </div>
+      <div class="formulario">
+        <form>
+          <label for="email"> Assine para receber nossos conteúdos: </label>
+          <input class="input-email" type="email" id="email" name="email" placeholder="Insira seu melhor e-mail aqui*">
+          <input class="enviar-formulario" type="submit" value="Participar" onclick="sendMail()">
+        </form>
+      </div>
+    </div>
+    <div class="main-right">
+      <img class="main-img" src="./src/img/img-main-right.jpeg">
+    </div>
+  </main>
+
+  <section class="pos-main">
+    <img src="src/img/img-pos-main.jpg">
+  </section>
+  <section class="pos-pos-main">
+    <div class="escola">
+      <div>
+        <h2> Desenvolvimento </h2>
+      </div>
+      <div>
+        <ol>
+          <li> Analisamos sua ideia</li>
+          <li> Entramos em contato com um mentor</li>
+          <li> Criamos um protótipo </li>
+          <li> Repetimos o ciclo até que esteja pronto pra jogo </li>
+        </ol>
+      </div>
+    </div>
+    <div class="cliente">
+      <div>
+        <h2> Quem pode se beneficiar? </h2>
+        <p>Em princípio qualquer um que tenha uma ideia e disposição para fazer acontecer, mas aqui vai uma lista:</p>
+      </div>
+      <div>
+        <ol>
+          <li> Projetos de causas Sociais e Ativismo</li>
+          <li> Criativos de periferia </li>
+          <li> Projetos artísticos </li>
+          <li> Empreendedorismo </li>
+          <li> Tecnologia Social </li>
+          <li> Projetos locais para sua comunidade </li>
+        </ol>
+      </div>
+    </div>
+    <div class="vaquinha">
+      <div>
+        <h2> Financiamento </h2>
+      </div>
+      <div>
+        <ol>
+          <li>Conte a história do seu projeto</li>
+          <li> Compartilhe com seus conhecidos </li>
+          <li> Adquira recursos financeiros </li>
+          <li> Crie conexões com investidores </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <!-- seção antiga do figma
+    <section class="section-1">
+        <div>
+            <img class="section-1-img" src="./src/img/section-1.jpg">
+        </div>
+        <div>
+            <h2>Desenvolva seu projeto</h2>
+            <p>O laboratório Criartividades oferece uma ampla gama de cursos e workshops onde você pode aprender novas técnicas para potencializar sua criatividade e dar vida aos seus projetos.</p>
+            <p>💡[CURSO] Como se sustentar através do seu projeto criativo?</p>
+            <p>💡[WORKSHOP] Exercícios para desenvolver sua criatividade.</p>
+            <p>💡[COMUNIDADE] Discussões sobre materiais para ajudar na jornada criativa.
+            </p>
+            <p>Independentemente do nível de habilidade ou experiência, todos são bem-vindos a se juntar à nossa comunidade criativa e aprender conosco.</p>
+        </div>
+    </section>
+    
+    <section class="section-1">
+        <div>
+            <h2>Visibilidade e financiamento</h2>
+            <p>Na nossa plataforma de vaquinha online você compartilha seu projeto com o mundo e:</p>
+            <p>💵 Pode compartilhar seu projeto com seus conhecidos.</p>
+            <p>💵 Oportunidades de exposição a potenciais patrocinadores.</p>
+            <p>💵 Sem custos iniciais.</p>
+        </div>
+        <div>
+            <img class="section-2-img" src="./src/img/section-2.jpg">
+        </div>
+    </section>
+
+    <section class="section-3">
+        <div>
+            <img class="section-3-img" src="./src/img/section-3.jpg">
+        </div>
+        <div>
+            <h2>Se conecte com uma comunidade de criadores</h2>
+            <p>Colabore, compartilhe ideias e receba dicas de como desenvolver o que está pensando.</p>
+        </div>
+    </section>
+    <section>
+      <h2> Quem pode se beneficiar </h2>
+    </section>
+      <section>
+      <h2> Article </h2>
+    </section> -->
+
+  <!-- Seção de Financiamento Coletivo 
+    <section id="crowdfunding" class="crowdfunding-section">
+        <h2>Plataforma de Financiamento Coletivo</h2>
+        <p>Explore nossa plataforma de financiamento coletivo exclusiva, onde você pode lançar campanhas de crowdfunding para apoiar projetos criativos inovadores.</p>
+        <p>Com nosso sistema de crowdfunding, você pode:</p>
+        <ul>
+            <li>Lançar vaquinhas online para arrecadar fundos</li>
+            <li>Conectar-se com uma comunidade de apoiadores apaixonados</li>
+            <li>Alcançar seu público-alvo e compartilhar sua visão</li>
+            <li>Tornar suas ideias criativas em realidade</li>
+        </ul>
+    </section> -->
+
+  <!-- Seção de FAQ -->
+  <section id="faq" class="faq-section">
+    <h2>Perguntas Frequentes</h2>
+    <div class="faq-item">
+      <button class="faq-question">Quais são os pré-requisitos para ingressar nos cursos?</button>
+      <div class="faq-answer">
+        <p>Nossos cursos são abertos a pessoas de todas as idades e níveis de experiência. Basta trazer sua paixão pela
+          criatividade!</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Como posso lançar minha campanha de crowdfunding?</button>
+      <div class="faq-answer">
+        <p>Lançar uma campanha é simples. Crie uma conta, descreva seu projeto, defina uma meta de financiamento e
+          compartilhe com sua rede!</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Qual é a duração média dos cursos?</button>
+      <div class="faq-answer">
+        <p>A duração dos cursos varia, mas a maioria de nossos cursos varia de 6 a 10 semanas, com aulas semanais.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Qual é a duração média dos cursos?</button>
+      <div class="faq-answer">
+        <p>A duração dos cursos varia, mas a maioria de nossos cursos varia de 6 a 10 semanas, com aulas semanais.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <p>&copy; 2023 Criartividades - Todos os direitos reservados</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
