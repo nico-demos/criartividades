@@ -2,11 +2,12 @@
 function sendMail() {
     document.getElementById("messageSend").innerText = ""
     let params = {
-        email: document.getElementById("email").value,
+        email: document.getElementById("email").value
     }
 
-    const serviceID = "service_na1lapi"
-    const templateID = "template_q4prllu"
+    const serviceID = "service_na1lapi";
+    const templateID = "template_q4prllu";
+    
     if (params.email) {
         toggleLoader();
         emailjs.send(serviceID, templateID, params)

@@ -74,6 +74,11 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    cursor: pointer;
+    color: #ffbb00;
+}
+
 main {
     height: 610px;
     display: flex;
@@ -125,6 +130,11 @@ form {
     background-color: #8A2BE2B2;
     color: white;
     border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #892be2;
 }
 
 .input-email, .faq-question {
