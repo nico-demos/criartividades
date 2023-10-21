@@ -5,18 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Criartividades - escola de criatividade e financiamento coletivo </title>
+  <title> Criartividades - escola de criatividade </title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-      (function() {
-          emailjs.init('AlPM0NLusdwP6Xu_x');
-      })();
-  </script>
 </head>
 
+<!--Seção de inicio, formulário de news -->
 <body>
+  <!-- Barra de navegação -->
   <nav>
     <div class="logo">
       <h1>CRIARTIVIDADES</h1>
@@ -27,20 +22,20 @@
       <a href="#about"> CASOS REAIS </a>
     </div>
     <div class="nav-right">
-      <button class="botao-contato"> CONTATO </button>
+      <a href="./src/html/contato.html" target="_blank"><button class="botao-contato"> CONTATO </button></a>
     </div>
   </nav>
   <main>
     <div class="main-left">
-      <div class="chamada">
+      <header>
         <h2> A escola de criatividade que te ajuda a <span class="destaque-texto">despertar</span> e dar vida a seus
           projetos criativos.</h2>
-      </div>
+      </header>
       <div class="formulario">
-        <form id="contact-form">
+        <form id="contact-form" action="https://formsubmit.co/cb5db885b1b6efc883e35fc8f1c071d0" method="POST">
           <label for="email"> Assine para receber nossos conteúdos: </label>
-          <input class="input-email" type="email" id="email" name="email" placeholder="Insira seu melhor e-mail aqui*">
-          <button class="enviar-formulario" onclick="sendMail()"> Participar </button>
+          <input class="input-email" type="email" name="email" placeholder="Insira seu melhor e-mail aqui*" required>
+          <button type="submit" class="enviar-formulario"> Participar </button>
         </form>
       </div>
     </div>
@@ -48,7 +43,7 @@
       <img class="main-img" src="./src/img/img-main-right.jpeg">
     </div>
   </main>
-
+  <!-- Explicação do funcionamento do projeto -->
   <section class="pos-main">
     <img src="src/img/img-pos-main.jpg">
   </section>
